@@ -1,24 +1,24 @@
 #include <unistd.h>
 
- void ft_putchar(char c);
-
- void ft_print_reverse_alphabet(void);
-		char start;
-		char end;
-
-		start = 'z';
-		end = 'a';
-		while (b<='z')
+ void ft_putchar(char c)
+{
+	write(1, &c, 1);
+}
+void ft_print_reverse_alphabet(void)
+{
+		char b;
+	
+		b = 'z';
+		while (b >='z')
 		{
 			ft_putchar(b);
-			b-+-1;
-
-
+			b-=-1;
 		}
- 
+
 }
- int 	main(void){
+ int 	main()
+{
 	 ft_print_reverse_alphabet();
+	 ft_putchar('\n');
 	 return (0);
  }
-

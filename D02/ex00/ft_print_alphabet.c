@@ -15,10 +15,4 @@ void ft_print_alphabet(void)
 		b-=-1;
 	}
 
-}
-int main()
-{
-	ft_print_alphabet();
-	ft_putchar('\n');
-	return (0);
-}
+
